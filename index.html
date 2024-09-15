@@ -7,6 +7,57 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+<style>
+  .swiper {
+      width: 100%;
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+
+    .swiper-slide {
+      width: 420px;
+      height: 400px;
+      background-color: #cecece;
+      border-radius: 8px;
+    }
+
+    @media (max-width :768px) {
+      .swiper-slide {
+      width: 310px;
+      height: 400px;
+      background-color: #cecece;
+      border-radius: 8px;
+    }
+    .cars .car img {
+    width: 310px;
+    height: 220px;
+    border-radius: 8px;
+  }
+    }
+    /* .swiper-slide img {
+      display: block;
+      width: 100%;
+      padding: 5px;
+      height: 200px;
+      margin-bottom: 10px;
+    } */
+    
+  /* .swiper {
+      width: 100%;
+      padding-top: 50px;
+      padding-bottom: 50px;
+
+    } 
+    .swiper-slide {
+
+      width: 300px;
+      height: 500px;
+    }
+    .swiper-slide img {
+
+    }  */
+</style>
 </head>
 <body>
   <nav class="navbar navbar-expand-lg bg-body-tertiary containar">
@@ -21,7 +72,7 @@
             <a class="nav-link active" aria-current="page" href="#">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Cars</a>
+            <a class="nav-link" href="#Cars">Cars</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Pricing</a>
@@ -67,6 +118,194 @@
     <h1>FIND YOUR <span>RENTAL CAR</span></h1>
     <p>We have many best rental car collections.</p>
   </section>
-</body> <script src="js/script.js"></script> <script src="js/bootstrap.min.js"></script>
+  <section class="send-car d-flex containar ">
+    <div class="sen">
+      <p>Vehicle type</p>
+      <input type="text" placeholder="Select Vehicle Type">
+    </div>
+    <div class="sen">
+      <p>Picking up location</p>
+      <input type="text" placeholder="Airport Or anywhere">
+    </div>
+    <div class="sen">
+      <p>Picking up date</p>
+      <input type="datetime-local">
+    </div>
+    <div class="sen">
+      <p>Returning date</p>
+      <input type="datetime-local">
+    </div>
+
+    <button>FIND YOUR CAR</button>
+
+  </section>
+  <section class="process">
+    <div class="main-title">
+      <h1>OUR RINTING <span>PROCESS</span></h1>
+    </div>
+    <div class="process-content d-flex">
+      <div class="proc-cont">
+        <div class="circle"></div>
+        <h4>Choose a vehicle</h4>
+        <p>Sed euismod mauris corper libero.</p>
+      </div>
+      <div class="proc-cont">
+        <div class="circle"></div>
+        <h4>Pick location & date</h4>
+        <p>Nisi maecenas fermentum neque.</p>
+      </div>
+      <div class="proc-cont">
+        <div class="circle"></div>
+        <h4>Book your car</h4>
+        <p>Mauris corper accumsan urna sed.</p>
+      </div>
+      <div class="proc-cont">
+        <div class="circle"></div>
+        <h4>Finish process</h4>
+        <p>Orci duis ut lectus metus nam sette.</p>
+      </div>
+    </div>
+  </section>
+  <section class="cars-rental containar" id="Cars">
+    <div class="main-title">
+      <h1>CARS FOR <span>RENTAL</span></h1>
+    </div>
+    <div class="cars">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="car swiper-slide">
+            <img src="image/car1.png" alt="">
+            <div class="car-cont">
+              <h3>BMW X3</h3>
+              <ul class="d-flex">
+                <li>Sports</li>
+                <li>Auto</li>
+                <li>4 Passengers</li>
+                <li>Diesel</li>
+              </ul>
+              <div class="car-rent d-flex">
+                <p>$369 <span>/Day</span></p>
+               <div>Rent Now</div>
+              </div>
+            </div>
+          </div>
+          <div class="car swiper-slide">
+            <img src="image/car2.png" alt="">
+            <div class="car-cont">
+              <h3>BMW X3</h3>
+              <ul class="d-flex">
+                <li>Sports</li>
+                <li>Auto</li>
+                <li>4 Passengers</li>
+                <li>Diesel</li>
+              </ul>
+              <div class="car-rent d-flex">
+                <p>$369 <span>/Day</span></p>
+               <div>Rent Now</div>
+              </div>
+            </div>
+          </div>
+          <div class="car swiper-slide">
+            <img src="image/car3.png" alt="">
+            <div class="car-cont">
+              <h3>BMW X3</h3>
+              <ul class="d-flex">
+                <li>Sports</li>
+                <li>Auto</li>
+                <li>4 Passengers</li>
+                <li>Diesel</li>
+              </ul>
+              <div class="car-rent d-flex">
+                <p>$369 <span>/Day</span></p>
+               <div>Rent Now</div>
+              </div>
+            </div>
+          </div>
+          <div class="car swiper-slide">
+            <img src="image/car2.png" alt="">
+            <div class="car-cont">
+              <h3>BMW X3</h3>
+              <ul class="d-flex">
+                <li>Sports</li>
+                <li>Auto</li>
+                <li>4 Passengers</li>
+                <li>Diesel</li>
+              </ul>
+              <div class="car-rent d-flex">
+                <p>$369 <span>/Day</span></p>
+               <div>Rent Now</div>
+              </div>
+            </div>
+          </div>
+          <div class="car swiper-slide">
+            <img src="image/car1.png" alt="">
+            <div class="car-cont">
+              <h3>BMW X3</h3>
+              <ul class="d-flex">
+                <li>Sports</li>
+                <li>Auto</li>
+                <li>4 Passengers</li>
+                <li>Diesel</li>
+              </ul>
+              <div class="car-rent d-flex">
+                <p>$369 <span>/Day</span></p>
+               <div>Rent Now</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  </section>
+  
+  <!-- <section class="test containar">
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="car swiper-slide">
+          <img src="image/car1.png" alt="">
+          <div class="car-cont">
+            <h3>BMW X3</h3>
+            <ul class="d-flex">
+              <li>Sports</li>
+              <li>Auto</li>
+              <li>4 Passengers</li>
+              <li>Diesel</li>
+            </ul>
+            <div class="car-rent d-flex">
+              <p>$369 <span>/Day</span></p>
+             <div>Rent Now</div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <img src="image/car2.png" />
+        </div>
+        <div class="swiper-slide">
+          <img src="image/car3.png" />
+        </div>
+        <div class="swiper-slide">
+          <img src="image/car2.png" />
+        </div>
+        <div class="swiper-slide">
+          <img src="image/car3.png" />
+        </div>
+        <div class="swiper-slide">
+          <img src="image/car1.png" />
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+  
+  </section> -->
+
+  <script src="js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</body>
+  <script src="js/script.js">
+    
+  </script>
+
+
 
 </html>

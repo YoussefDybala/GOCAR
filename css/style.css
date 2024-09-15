@@ -20,6 +20,7 @@ html {
   body {
     font-family: "Work Sans", sans-serif;
     transition: 0.5s;
+    background-color: rgb(248, 248, 248);
   }
 ul {
     list-style: none;
@@ -59,7 +60,7 @@ ul {
     }
     
   }
-
+/* //////////////////////////////////////////// start nav  */
   .drop-down {
     position: absolute;
     left: -8px;
@@ -118,6 +119,9 @@ ul {
        left: 10%;
       }
   }
+  /* //////////////////////////////////////////// end nav  */
+
+  /* //////////////////////////////////////////// start landing  */
   .landing {
     width: 100%;
     height: 500px;
@@ -211,3 +215,219 @@ ul {
     width: 200px;
     height: 60px;
   }
+
+  .send-car {
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    top: -150px;
+    height: 290px;
+    z-index: 111;
+    border-radius: 8px;
+    padding: 70px 0;
+    overflow: hidden;
+  }
+  @media (max-width : 768px) {
+    .send-car {
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+      align-items: center;
+      width: 80%;
+      background-color: rgb(255, 255, 255);
+      position: relative;
+      height: 750px;
+      z-index: 111;
+      border-radius: 8px;
+      padding: 70px 0;
+    }
+
+  }
+  .send-car .sen {
+    margin-top: 15px;
+  }
+  .send-car input {
+    outline: none;
+    border: none;
+    padding: 15px;
+    border-radius: 3px;
+    border: 1px solid #d7d7d7;
+    width: 260px;
+    transition: 0.5s;
+    display: block;
+  }
+  .send-car p {
+  margin-top: 15px;
+  font-size: 18px;
+  }
+  .send-car input:focus {
+    border: 1px solid #242424;
+  } 
+  .send-car button {
+    display: block;
+    background-color: black;
+    color: white;
+    border-radius: 8px;
+    padding: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: 0.3s;
+    border: none;
+    margin-bottom: 20px;
+  }
+  .send-car button:hover {
+    background-color: var(--main-color);
+  }
+
+@media (max-width :768px) {
+  .send-car .sen {
+    margin-top: -50px;
+  }
+  .send-car button {
+    width: 300px;
+    height: 50px;
+    margin-top: -20px;
+  }
+}
+@media (min-width: 768px) {
+  .send-car button {
+    width: 500px;
+    height: 50px;
+  }
+}
+    /* /* //////////////////////////////////////////// end landing  */
+
+   /* //////////////////////////////// start process  */
+
+
+.main-title {
+  font-family: var(--heading-font);
+  font-weight: bold;
+ text-align: center;
+ padding: 70px 0;
+}
+.main-title span{
+  color: var(--main-color);
+}
+.process-content {
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  font-weight: normal;
+  padding-bottom: 70px;
+}
+.process-content .circle {
+  width: 20px;
+  height: 20px;
+  background-color: var(--main-color);
+  border-radius: 50%;
+  margin-bottom: 50px;
+  position: relative;
+}
+.process-content .circle::after {
+position: absolute;
+content: '';
+width: 270px;
+height: 1px;
+background-color: rgba(63, 63, 63, 0.623);
+top: 8px;
+left: 15px;
+z-index: -1;
+}
+.process-content p {
+  color: gray;
+}
+   /* //////////////////////////////// end process  */
+   /* .collection {
+    justify-content: center;
+    align-items: center;
+   }
+   .collection .content {
+    height: 28rem;
+    width: 25rem;
+    background-color: #eee;
+    border-radius: 5px;
+    border: 2px solid #333;
+   }
+   .content img {
+    width: 100%;
+   } */
+
+   /* //////////////////// start cars  */
+  .cars {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+  
+  }
+  .car {
+    width: 320px; 
+    height: 400px;
+  }
+
+  .cars .car img {
+    width: 420px;
+    height: 220px;
+    border-radius: 8px;
+  }
+    .cars .car h3 {
+    font-family: var();
+    padding: 15px;
+  }
+  .cars .car ul {
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    left: -15px;
+  }
+  .cars .car ul::after {
+    content: '';
+    position: absolute;
+    width: 90%;
+    height: 1px;
+    bottom:  -10px;
+    background-color: #5d5d5d5f;
+  }
+  .cars .car ul li{
+    margin-left: -10px;
+    justify-content: space-around;
+    font-size: 18px;
+    color: gray;
+  }
+  .car  .car-rent {
+    justify-content: space-between;
+    padding: 10px;
+  }
+  .car  .car-rent  p {
+    font-family: var(--heading-font);
+    font-size: 25px;
+  }
+  .car  .car-rent  p span {
+    font-family: sans-serif;
+    font-size: 16px;
+  }
+  .car  .car-rent  div {
+    background-color: black;
+    color: white;
+    transition: 0.5s;
+    width: 100px;
+    height: 38px;
+    text-align: center;
+    padding: 5px;
+    font-weight: bold;
+    border-radius: 6px;
+  }
+  .car  .car-rent  div:hover {
+    background-color: var(--main-color);
+  }
+   /* //////////////////// :end cars  */
+
+   /* ///////////////////// start test */
+
+  /* ////////////////////////// end test */
