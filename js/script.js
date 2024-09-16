@@ -10,12 +10,11 @@ dropDownNav.addEventListener("click" , function () {
   })
 /////////////// end nav
 
-
+/////////////////////// start cars 
 var swiper = new Swiper(".mySwiper", {
   effect: "coverflow",
   grabCursor: true,
   centeredSlides: true,
-  loop : true ,
   slidesPerView: "auto",
   coverflowEffect: {
     rotate: 50,
@@ -24,26 +23,9 @@ var swiper = new Swiper(".mySwiper", {
     modifier: 1,
     slideShadows: true,
   },
-// autoplay: {
-//   delay : 3000 , 
-//   disableOnInteraction : false
-// }
 });
+/////////////////////// end cars 
 
   //////////////////// start test 
-  // var swiper = new Swiper(".mySwiper", {
-  //   spaceBetween: 50,
-  //   pagination: {
-  //     el: ".swiper-pagination",
-  //     clickable: true,
-  //   },
-  // });
-  // var swiper2 = new Swiper(".mySwiper2", {
-  //   direction: "vertical",
-  //   spaceBetween: 50,
-  //   pagination: {
-  //     el: ".swiper-pagination",
-  //     clickable: true,
-  //   },
-  // });
+
   //////////////////// end test 
