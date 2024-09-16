@@ -32,6 +32,7 @@ ul {
     .slide {
     animation: slide 1.5s ease-in-out;
   }
+
   .containar {
     padding-left: 15px;
     padding-right: 15px;
@@ -152,7 +153,7 @@ ul {
     .landing p::after {
         content: '';
         position: absolute;
-        width: 635px;
+        width: 535px;
         height: 235px;
         background-color: var(--main-color);
         right: -804px;
@@ -162,7 +163,7 @@ ul {
       .landing::before {
         content: '';
         position: absolute;
-        width: 446px;
+        width: 346px;
         height: 235px;
         background-color: var(--main-color);
         right: -150px;
@@ -309,6 +310,17 @@ ul {
   font-weight: bold;
  text-align: center;
  padding: 70px 0;
+ font-size: 35px;
+}
+.main-title h1 {
+  font-size: 45px;
+  font-weight: bold;
+}
+@media (max-width : 768px) {
+  .main-title h1 {
+    font-size: 35px;
+    font-weight: bold;
+  }
 }
 .main-title span{
   color: var(--main-color);
@@ -343,38 +355,48 @@ z-index: -1;
   color: gray;
 }
    /* //////////////////////////////// end process  */
-   /* .collection {
-    justify-content: center;
-    align-items: center;
-   }
-   .collection .content {
-    height: 28rem;
-    width: 25rem;
-    background-color: #eee;
-    border-radius: 5px;
-    border: 2px solid #333;
-   }
-   .content img {
-    width: 100%;
-   } */
 
    /* //////////////////// start cars  */
-  .cars {
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 30px;
-  
-  }
-  .car {
-    width: 320px; 
-    height: 400px;
+   #Cars {
+    padding: 70px 0;
+   }
+   .cars .swiper {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
   }
 
-  .cars .car img {
+.cars  .swiper-slide {
     width: 320px;
-    height: 220px;
+    height: 400px;
+    background-color: #cecece;
     border-radius: 8px;
   }
+  .cars {
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 30px;
+    
+    }
+
+.cars .car img {
+  width: 320px;
+  height: 220px;
+  border-radius: 8px;
+}
+@media (max-width :768px) {
+  .cars .swiper-slide {
+  width: 280px;
+  height: 400px;
+  background-color: #cecece;
+  border-radius: 8px;
+}
+.cars .car img {
+width: 280px;
+height: 220px;
+border-radius: 8px;
+}
+}
     .cars .car h3 {
     font-family: var();
     padding: 15px;
@@ -429,5 +451,119 @@ z-index: -1;
    /* //////////////////// :end cars  */
 
    /* ///////////////////// start test */
+   .test {
+    background-color: #eee;
+    position: relative;
+    overflow: hidden;
+    height: 550px;
 
+  }
+  @media (max-width :768px) {
+    .test {
+      background-color: #eee;
+      position: relative;
+      overflow: hidden;
+      height: 700px;
+    }
+  }
+  @media (min-width: 1200px) {
+    .test::before {
+      content: '';
+      position: absolute;
+      width: 446px;
+      height: 235px;
+      background-color: #94ca2184;
+      right: -250px;
+      bottom: -84px;
+      transform: rotate(-40deg);
+      z-index: 1;
+    }
+  }
+   .testu .swiper {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: -100px;
+  }
+
+.testu .swiper-slide {
+    text-align: center;
+    position: relative;
+    top: 50px;
+  }
+  @media (max-width :768px) {
+    .testu .swiper-slide {
+      text-align: center;
+
+  }
+}
+.testu .swiper-slide .test-icon {
+  font-size: 150px;
+  color: var(--main-color);
+}
+.testu .swiper-slide .test-lorem {
+  font-size: 25px;
+position: relative;
+top: -100px;
+}
+.testu .swiper-slide .test-name {
+  font-size: 28px;
+position: relative;
+font-weight: bold;
+top: -100px;
+}
   /* ////////////////////////// end test */
+
+  /* ////////////////// start plans  */
+  #Pricing {
+    padding: 70px 0;
+  }
+  .pricing .m-y {
+    justify-content: center;
+    align-items: center;
+  }
+  .pricing .m-y div{
+    margin-inline: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: black;
+    color: white;
+    padding: 8px;
+    transition: 0.5s;
+    cursor: pointer;
+    border-radius: 6px;
+    margin-bottom: 50px;
+  }
+  .pricing .m-y div:hover {
+    background-color: var(--main-color);
+  }
+  .pricing-boxes {
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  .pricing-box {
+    width: 270px;
+    height: 600px;
+    border: 1px solid  rgba(0, 0, 0, 0.142);
+    border-radius: 8px;
+  }
+  .save-box {
+    background-color: #EDF3E0;
+    overflow: hidden;
+  }
+  .save-box h2 {
+    padding: 5px;
+    font-family: var(--heading-font);
+    position: relative;
+    padding-top: 60px;
+    font-weight: bold;
+    font-size: 31px;
+  }
+  .save-box i {
+    color: #d7e5b9 ;
+    font-size: 250px;
+    position: relative;
+    top: 80px;
+    left: 20px;
+  }
+  /* ////////////////// end plans  */
