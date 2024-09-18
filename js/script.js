@@ -17,12 +17,17 @@ var swiper = new Swiper(".mySwiper", {
   centeredSlides: true,
   slidesPerView: "auto",
   coverflowEffect: {
-    rotate: 50,
+    rotate: 0,
     stretch: 0,
-    depth: 100,
-    modifier: 1,
+    depth: 150,
+    modifier: 2.5,
     slideShadows: true,
   },
+   autoplay: {
+    delay : 3000 ,
+    disableOnInteraction : false 
+  }
+
 });
 /////////////////////// end cars 
 
