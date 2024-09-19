@@ -63,34 +63,79 @@ ul {
     
   }
 /* //////////////////////////////////////////// start nav  */
-.container-fluid {
-
+.mega-menu {
+  position: absolute;
+  z-index: 99;
+  width: 1120px;
+  height: 350px;
+  display: flex;
+  left: 200px;
+  flex-wrap: wrap;
+  flex-direction: column;
+  transform: translateY(-430px);
+  transition: 0.5s;
+  background-color: rgb(255, 255, 255);
+  border-bottom: 5px solid var(--main-color);
 }
-  .drop-down {
+.mega-menu .menu {
+width: 500px;
+position: relative;
+top: 40px;
+flex-wrap: wrap;
+}
+.mega-menu  img {
+  width: 500px;
+  height: 300px;
+  padding: 20px;
+  margin: 20px;
+}
+
+.mega-menu .menu li {
+padding: 12px;
+transition: 0.3s;
+}
+
+.mega-menu .menu li:hover {
+  background-color: #eee;
+}
+.mega-menu .menu li a{
+color: black;
+font-size: 20px;
+font-weight: bold;
+font-family: var(--heading-font);
+color: var(--main-color);
+}
+
+@media (max-width : 768px) {
+  .mega-menu {
     position: absolute;
-    left: -8px;
     z-index: 99;
-    width: 450px;
-    height: 250px;
+    width: 100%;
+    height: 700px;
     display: flex;
+    left: 0;
+    top: 0;
     flex-wrap: wrap;
     flex-direction: column;
-    transform: translateY(-400px);
+    transform: translateY(-1150px);
     transition: 0.5s;
+    background-color: rgb(255, 255, 255);
+    border-bottom: 5px solid var(--main-color);
+    overflow: hidden;
   }
+  .mega-menu  img  {
+    display: none;
+  }
+  .mega-menu .menu {
+    left: -60px;
+    gap: -30px;
+    flex-direction: column;
+  }
+}
   .open-navv {
     transform: translateY(0);
   }
-  .drop-down li {
-    position: relative;
-    left: -30px;
-    padding: 15px;
-    
-  }
-  .drop-down li a{ 
-   font-size: 18px;
-    color: black;
-  }
+ 
   .close-nav{
     color: black;
     width: fit-content;
@@ -103,16 +148,6 @@ ul {
     right: 10px;
     cursor: pointer;
     color: red;
-  }
-  @media (max-width : 768px) {
-    .drop-down {
-      width: 100%;
-      position: absolute;
-      left: 0;
-      color: #bcbcbc;
-      top: 0;
-      height: 400px;
-    }
   }
   form button {
     margin-left: 20px;
