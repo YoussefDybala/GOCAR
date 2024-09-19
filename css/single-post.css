@@ -204,7 +204,7 @@ color: var(--main-color);
     position: absolute;
     right: 0;
     width: 200px;
-    top: -61px;
+    top: -60px;
 }
 @media (max-width : 768px) {
     .aboutt img {
