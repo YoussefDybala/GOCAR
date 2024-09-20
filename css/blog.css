@@ -167,13 +167,13 @@ color: var(--main-color);
 }
   /* //////////////////////////////////////////// end nav  */
   /* //////////////////// start about  */
-  .about {
+  .blog {
     background-color: #f3f2f2;
     height: 350px;
     position: relative;
     overflow: hidden;
 }
-.about::after {
+.blog::after {
     position: absolute;
     content: '';
     width: 150px;
@@ -183,7 +183,7 @@ color: var(--main-color);
     bottom: -175px;
     transform: rotate(40deg);
 }
-.aboutt {
+.blogg {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -194,20 +194,20 @@ color: var(--main-color);
     top: 35%;
 
 }
-.aboutt h1 {
+.blogg h1 {
     font-family: var(--heading-font);
     font-weight: bold;
     font-size: 55px;
     margin-bottom: 15px;
 }
-.aboutt img {
+.blogg img {
     position: absolute;
     right: 0;
     width: 200px;
     top: -61px;
 }
 @media (max-width : 768px) {
-    .aboutt img {
+    .blogg img {
        display: none;
     }
 }
