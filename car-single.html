@@ -3,13 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog GOCAR</title>
+    <title>Cars-Single GOCAR</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/blog.css">
+    <link rel="stylesheet" href="css/cars-single.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 <style>
+    
+ .swiper {
+      height: 100%;
+    }
 
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      /* height: 205px;
+      width: 400px !important; */
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
 </style>
 </head>
 <body>
@@ -60,14 +81,14 @@
       <img src="image/blog8.jpg" alt="">
     </div>
     <ul class="menu d-flex">
-      <ul>
-          <li><a href="about.html" target="_blank">About</a></li>
-          <li><a href="blog.html" target="_blank">Blog</a></li>
-          <li><a href="single-post.html" target="_blank">Single-Post</a></li>
-          <li><a href="cars.html" target="_blank">Cars</a></li>
-          <li><a href="car-single.html" target="_blank">Car-Single</a></li>
-          </ul>
-      <ul>
+    <ul>
+        <li><a href="about.html" target="_blank">About</a></li>
+        <li><a href="blog.html" target="_blank">Blog</a></li>
+        <li><a href="single-post.html" target="_blank">Single-Post</a></li>
+        <li><a href="cars.html" target="_blank">Cars</a></li>
+        <li><a href="car-single.html" target="_blank">Car-Single</a></li>
+        </ul>
+    <ul>
         <li><a href="">Booking</a></li>
         <li><a href="">Services</a></li>
         <li><a href="">Pricing</a></li>
@@ -82,73 +103,36 @@
     <span class="close-nav">Close</span>
   </div>
 
-  <section class="blog">
-    <div class="blogg">
-        <h1>BLOG</h1>
-        <p>Home  / About Us</p>
+  <section class="Cars-Single">
+    <div class="Carss">
+        <h1>Cars-Single</h1>
+        <p>Home  / Cars-Single</p>
       
     </div>
     <div class="pattern"></div>
 </section>
- 
-<section class="blog-cars">
-    <div class="cars d-flex containar">
-        <div class="car">
-            <img src="image/blog1.jpg" alt="">
-            <div>CARS/ 12 JAN, 2022</div>
-            <p>Things to remember while renting car</p>
-            <span>Dignissim lacus, turpis ut suspendisse vel tellus. Turpis purus, gravida orci, fringilla...</span>
-        </div>
-        <div class="car">
-            <img src="image/blog2.jpg" alt="">
-            <div>CARS/ 18 JAN, 2022</div>
-            <p>Things to remember while renting car</p>
-            <span>Dignissim lacus, turpis ut suspendisse vel tellus. Turpis purus, gravida orci, fringilla...</span>
-        </div>
-        <div class="car">
-            <img src="image/blog3.jpg" alt="">
-            <div>CARS/ 22 JAN, 2022</div>
-            <p>Things to remember while renting car</p>
-            <span>Dignissim lacus, turpis ut suspendisse vel tellus. Turpis purus, gravida orci, fringilla...</span>
-        </div>
-        <div class="car">
-            <img src="image/blog4.jpg" alt="">
-            <div>CARS/ 28 JAN, 2022</div>
-            <p>Things to remember while renting car</p>
-            <span>Dignissim lacus, turpis ut suspendisse vel tellus. Turpis purus, gravida orci, fringilla...</span>
-        </div>
-        <div class="car">
-            <img src="image/blog5.jpg" alt="">
-            <div>CARS/ 3 FEB, 2022</div>
-            <p>Things to remember while renting car</p>
-            <span>Dignissim lacus, turpis ut suspendisse vel tellus. Turpis purus, gravida orci, fringilla...</span>
-        </div>
-        <div class="car">
-            <img src="image/blog6.jpg" alt="">
-            <div>CARS/ 8 FEB, 2022</div>
-            <p>Things to remember while renting car</p>
-            <span>Dignissim lacus, turpis ut suspendisse vel tellus. Turpis purus, gravida orci, fringilla...</span>
-        </div>
-        <div class="car">
-            <img src="image/blog7.jpg" alt="">
-            <div>CARS/ 15 FEB, 2022</div>
-            <p>Things to remember while renting car</p>
-            <span>Dignissim lacus, turpis ut suspendisse vel tellus. Turpis purus, gravida orci, fringilla...</span>
-        </div>
-        <div class="car">
-            <img src="image/blog8.jpg" alt="">
-            <div>CARS/ 25 FEB, 2022</div>
-            <p>Things to remember while renting car</p>
-            <span>Dignissim lacus, turpis ut suspendisse vel tellus. Turpis purus, gravida orci, fringilla...</span>
-        </div>
-        <div class="car">
-            <img src="image/blog9.jpg" alt="">
-            <div>CARS/ 28 FEB, 2022</div>
-            <p>Things to remember while renting car</p>
-            <span>Dignissim lacus, turpis ut suspendisse vel tellus. Turpis purus, gravida orci, fringilla...</span>
-        </div>
+
+<section class="swip containar">
+    <div class="active-img">
+        <div class="active-one"><img src="image/item-large1.jpg" alt=""></div>
+        <div class="active-two" style="display: none;"><img src="image/item-large4.jpg" alt=""></div>
+        <div class="active-three" style="display: none;"><img src="image/item-large5.jpg" alt=""></div>
+        <div class="active-four" style="display: none;"><img src="image/item-large8.jpg" alt=""></div>
+        <div class="active-five" style="display: none;"><img src="image/item-large9.jpg" alt=""></div>
+    </div>
+    <div class="main-img d-flex">
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide swip-one"><img src="image/item-large1.jpg" alt=""></div>
+              <div class="swiper-slide swip-two"><img src="image/item-large4.jpg" alt=""></div>
+              <div class="swiper-slide swip-three"><img src="image/item-large5.jpg" alt=""></div>
+              <div class="swiper-slide swip-four"><img src="image/item-large8.jpg" alt=""></div>
+              <div class="swiper-slide swip-five"><img src="image/item-large9.jpg" alt=""></div>
+            </div>
     </div>
 </section>
+
+
 
 <section class="contact" id="Contact">
     <div class="all-contact containar d-flex">
@@ -185,7 +169,7 @@
   <script src="js/bootstrap.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </body>
-  <script src="js/blog.js">
+  <script src="js/cars-single.js">
     
   </script>
 

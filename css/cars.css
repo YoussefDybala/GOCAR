@@ -62,6 +62,26 @@ ul {
     }
     
   }
+  .main-title {
+    font-family: var(--heading-font);
+    font-weight: bold;
+   text-align: center;
+   padding: 70px 0;
+   font-size: 35px;
+  }
+  .main-title h1 {
+    font-size: 45px;
+    font-weight: bold;
+  }
+  @media (max-width : 768px) {
+    .main-title h1 {
+      font-size: 35px;
+      font-weight: bold;
+    }
+  }
+  .main-title span{
+    color: var(--main-color);
+  }
 /* //////////////////////////////////////////// start nav  */
 .mega-menu {
   position: absolute;
@@ -167,13 +187,13 @@ color: var(--main-color);
 }
   /* //////////////////////////////////////////// end nav  */
   /* //////////////////// start about  */
-  .blog {
+  .Cars {
     background-color: #f3f2f2;
     height: 350px;
     position: relative;
     overflow: hidden;
 }
-.blog::after {
+.Cars::after {
     position: absolute;
     content: '';
     width: 150px;
@@ -183,7 +203,7 @@ color: var(--main-color);
     bottom: -175px;
     transform: rotate(40deg);
 }
-.blogg {
+.Carss {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -194,13 +214,13 @@ color: var(--main-color);
     top: 35%;
 
 }
-.blogg h1 {
+.Carss h1 {
     font-family: var(--heading-font);
     font-weight: bold;
     font-size: 55px;
     margin-bottom: 15px;
 }
-.blog .pattern {
+.Cars .pattern {
   background-color: var(--main-color);
   width: 400px;
   height: 400px;
@@ -210,7 +230,7 @@ color: var(--main-color);
   transform: rotate(40deg);
   z-index: 999999999999999;
 }
-.blog .pattern::after {
+.Cars .pattern::after {
   content: '';
   position: absolute;
   background-color: #f3f2f2;
@@ -219,7 +239,7 @@ color: var(--main-color);
   top: -50px;
   left: -10px;
 }
-.blog .pattern::before {
+.Cars .pattern::before {
   content: '';
   position: absolute;
   background-color: var(--main-color);
@@ -230,48 +250,103 @@ color: var(--main-color);
 }
 
 
-/* //////////////////// end about  */
+/* //////////////////// end Cars */
 
-/* /////////////////// start cars */
-.cars {
-    justify-content: center;
-    align-items: center;
-    row-gap: 50px;
-    column-gap: 25px;
+
+#Cars {
     padding: 70px 0;
-    flex-wrap: wrap;
-}
-.car {
-    width: 350px;
-}
-.car img{
-    width: 350px;
-}
-.car div{
-   margin-top: 15px;
-   color: gray;
-}
-.car p{
-    margin-top: 15px;
-    font-size: 25px;
-    font-weight: bold;
+   }
+   .cars {
+    padding: 70px 0;
+    position: relative;
+    bottom: 80px;
+   }
+   .cars  .swiper {
+    width: 340px;
+    height: 320px;
+    padding-top: -50px;
+  }
+  .cars  .swiper-slide {
+    width: 320px;
+    height: 400px;
+    background-color: #cecece;
+    border-radius: 8px;
+ 
+  }
+  .cars .car img {
+    width: 340px;
+    height: 220px;
+    padding: 5px;
+    border-radius: 8px;
+  }
+  @media (max-width :768px) {
+    .cars  .swiper {
+        width: 280px;
+        height: 320px;
+      }
+    .cars .swiper-slide {
+    width: 280px;
+    height: 400px;
+    background-color: #cecece;
+    border-radius: 8px;
+  }
+  .cars .car img {
+  width: 280px;
+  height: 220px;
+  border-radius: 8px;
+  }
+  }
+  .cars .car h3 {
     font-family: var(--heading-font);
-}
-.car span{
-    margin-top: 15px;
+    padding: 15px;
+  }
+  .cars .car ul {
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    left: -15px;
+  }
+  .cars .car ul::after {
+    content: '';
+    position: absolute;
+    width: 90%;
+    height: 1px;
+    bottom:  -10px;
+    background-color: #5d5d5d5f;
+  }
+  .cars .car ul li{
+    margin-left: -10px;
+    justify-content: space-around;
+    font-size: 18px;
     color: gray;
-}
-@media (max-width :768px) {
-  .car {
-    width: 320px;
   }
-  .car img{
-    width: 320px;
+  .car  .car-rent {
+    justify-content: space-between;
+    padding: 10px;
   }
-}
-/* /////////////////// end cars  */
-
-
+  .car  .car-rent  p {
+    font-family: var(--heading-font);
+    font-size: 25px;
+  }
+  .car  .car-rent  p span {
+    font-family: sans-serif;
+    font-size: 16px;
+  }
+  .car  .car-rent  div {
+    background-color: black;
+    color: white;
+    transition: 0.5s;
+    width: 100px;
+    height: 38px;
+    text-align: center;
+    padding: 5px;
+    font-weight: bold;
+    border-radius: 6px;
+  }
+  .car  .car-rent  div:hover {
+    background-color: var(--main-color);
+  }
 /* /////////////////////////// start contact  */
 .contact {
     padding: 100px 0;

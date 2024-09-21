@@ -438,7 +438,7 @@ border-radius: 8px;
 }
 }
     .cars .car h3 {
-    font-family: var();
+    font-family: var(--heading-font);
     padding: 15px;
   }
   .cars .car ul {
