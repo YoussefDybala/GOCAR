@@ -253,13 +253,44 @@ color: var(--main-color);
 /////////////////////// start swip  */
 .swip {
     width: 800px;
+    position: relative;
+    height: 680px;
 }
+
 .active-img img {
-max-width: 100%;
+max-width: 96%;
 height: auto;
 margin: 20px 0 ;
 z-index: 99999999999999;
 transition: 0.5s;
+position: absolute;
+bottom: 120px ;
+}
+.main-img {
+  position: relative;
+  top: 550px;
+}
+@media (max-width :768px) {
+  .swip {
+
+    position: relative;
+    height: 400px;
+}
+
+.active-img img {
+max-width: 92%;
+height: auto;
+margin: 20px 0 ;
+z-index: 99999999999999;
+transition: 0.5s;
+position: absolute;
+bottom: 100px ;
+text-align: center;
+}
+.main-img {
+  position: relative;
+  top: 300px;
+}
 }
 .add-opacity {
     opacity: 1;
