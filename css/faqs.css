@@ -186,14 +186,14 @@ color: var(--main-color);
     }
 }
   /* //////////////////////////////////////////// end nav  */
-  /* //////////////////// start contact  */
-  .Contact{
+  /* //////////////////// start FAQS  */
+  .Faqs{
     background-color: #f3f2f2;
     height: 350px;
     position: relative;
     overflow: hidden;
 }
-.Contact::after {
+.Faqs::after {
     position: absolute;
     content: '';
     width: 150px;
@@ -203,7 +203,7 @@ color: var(--main-color);
     bottom: -175px;
     transform: rotate(40deg);
 }
-.Contactt {
+.Faqss {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -214,13 +214,13 @@ color: var(--main-color);
     top: 35%;
 
 }
-.Contactt h1 {
+.Faqss h1 {
     font-family: var(--heading-font);
     font-weight: bold;
     font-size: 55px;
     margin-bottom: 15px;
 }
-.Contact .pattern {
+.Faqs .pattern {
   background-color: var(--main-color);
   width: 400px;
   height: 400px;
@@ -230,7 +230,7 @@ color: var(--main-color);
   transform: rotate(40deg);
   z-index: 999999999999999;
 }
-.Contact .pattern::after {
+.Faqs .pattern::after {
   content: '';
   position: absolute;
   background-color: #f3f2f2;
@@ -239,7 +239,7 @@ color: var(--main-color);
   top: -50px;
   left: -10px;
 }
-.Contact .pattern::before {
+.Faqs .pattern::before {
   content: '';
   position: absolute;
   background-color: var(--main-color);
@@ -248,9 +248,10 @@ color: var(--main-color);
   top: -50px;
   left: -30px;
 }
-/* //////////////////// end contact */
+/* //////////////////// end FAQS */
 
-/* /////////////////////////////// start contact */
+
+/* /////////////////////////////// start faqs */
 .contact-information {
     padding: 70px 0;
 }
@@ -260,7 +261,9 @@ color: var(--main-color);
     font-size: 35px;
     font-weight: bold;
 }
-.contact-information .contact-info ,
+.contact-information .contact-info {
+    width: 800px;
+}
 .contact-information .contact-qs {
     width: 600px;
 }
@@ -268,20 +271,43 @@ color: var(--main-color);
 .contact-information .contact-qs .title{
    margin-bottom: 40px;
 }
+.contact-information .contact-info .title {
+    width: 90%;
+}
 .contact-information .contact-info p,
 .contact-information .contact-qs p{
    color: gray;
 }
 
-.infotmation-content{
-    margin-bottom: 50px;
-}
-.infotmation-content ul li {
-    padding: 15px;
-}
-.infotmation-content ul {
-    margin-left: -50px;
-}
+.accordion {
+    padding-bottom: 70px ;
+  }
+  @media (min-width: 1200px) {
+    .accordion {
+      width: 680px;
+      position: relative;
+        left: -5%;
+    }
+  }
+
+  .accordion-item {
+    border: none;
+    border-bottom: 1px solid #eee;
+    background-color: inherit !important;
+    color: gray;
+  }
+  .accordion-item  button {
+    height: 75px;
+    background-color: inherit !important;
+  }
+  .accordion-item  button:focus {
+    border: none !important;
+  }
+
+
+
+
+
 .input-qs input {
     width: 43.7%;
     padding: 8px;
@@ -326,46 +352,14 @@ color: var(--main-color);
         justify-content: center;
         align-items: center;
     }
+    .contact-information .contact-info .title {
+        width: 100%;
+    }
+}
+/* ///////////////////// end faqs */
 
-}
-/* /////////////////////// end contact */
-.contact-country {
- flex-wrap: wrap;
- padding-bottom: 70px ;
-
-}
-.contact-country .country-content {
-width: 380px;
-position: relative;
-margin-bottom: 20px;
-}
-.contact-country .country-content p {
-    color: gray;
-}
-.contact-country .country-content:not(:last-child)::after {
-position: absolute;
-content: '';
-width: 0.1px;
-height: 100%;
-background-color: black;
-right:  50px;
-top: 0;
-}
-@media (max-width :768px) {
-    .contact-country {
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-       }
-    .contact-country .country-content:not(:last-child)::after {
-   display: none;
-        }
-}
-
-
-  /* ///////////////////// start services  */
-  .service {
+ /* ///////////////////// start services  */
+ .service {
     padding: 70px 0;
     background-color: #f7f4f4;
   }
@@ -422,7 +416,6 @@ top: 0;
     background-color: white;
     border-radius: 8px;
     text-align: center;
-    margin-bottom: 40px;
   }
   .service-box i{
     color: var(--main-color);
@@ -440,6 +433,71 @@ color: gray;
   /* ///////////////////// end services  */
 
 
+   /* //////////////////////// start blog */
+.blog {
+    padding: 70px 0;
+  }
+  .blog-title {
+    margin-left: 10px;
+  }
+  .blog-title p{
+  font-size: 39px;
+  font-weight: bold;
+  font-family: var(--heading-font);
+  }
+  .blog-title span{
+    color: var(--main-color);
+  }
+  .blog-title button{
+    border: none;
+    color: white;
+    background-color: black;
+    padding: 15px;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.4s;
+   }
+   .blog-title button:hover{
+     background-color: var(--main-color);
+   }
+  .blog-content {
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  
+  .blog-cont {
+    width: 600px;
+      gap: 30px;
+    border-bottom: 1px solid black;
+  margin-bottom: 15px;
+  }
+  @media (max-width :768px) {
+    .blog-cont {
+      width: 300px;
+        gap: 30px;
+      border-bottom: 1px solid black;
+      margin: 10px;
+    }
+  }
+  .datee {
+    font-weight: bold;
+    font-family: var(--heading-font);
+    width: 76px;
+    font-size: 27px;
+  }
+  .date-content p {
+  color: gray;
+  }
+  .date-content .date-cont {
+  color: black;
+  font-size: 25px;
+  font-weight: bold;
+  }
+  @media (min-width: 1200px) {
+  }
+    /* //////////////////////// end blog */
 
 /* /////////////////////////// start contact  */
 .contact {

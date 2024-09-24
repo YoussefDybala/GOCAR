@@ -186,7 +186,7 @@ color: var(--main-color);
     }
 }
   /* //////////////////////////////////////////// end nav  */
-  /* //////////////////// start about  */
+  /* //////////////////// start team  */
   .Team{
     background-color: #f3f2f2;
     height: 350px;
@@ -248,13 +248,16 @@ color: var(--main-color);
   top: -50px;
   left: -30px;
 }
-/* //////////////////// end contact */
+/* //////////////////// end team */
 
 /* ///////////////////////////// start teams  */
-
+.teams {
+  padding: 70px 0;
+}
 .teams .boxes {
     flex-wrap: wrap;
-    
+    justify-content: center;
+    align-items: center;
 }
 .teams .boxes .box{
     width: 380px;
@@ -308,7 +311,7 @@ margin-left: -40px;
 
   /* ///////////////////// start services  */
   .service {
-    padding: 70px 0;
+    padding: 100px 0;
     background-color: #f7f4f4;
   }
   .service-content{
