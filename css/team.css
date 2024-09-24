@@ -290,7 +290,9 @@ margin-left: -40px;
     }
     .teams .boxes .box{
         width: 320px;
-    
+    }
+    .teams .boxes .box img {
+      width: 100%;
     }
     .teams .boxes .box p {
         width: 100%;
