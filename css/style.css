@@ -33,6 +33,20 @@ ul {
     .slide {
     animation: slide 1.5s ease-in-out;
   }
+  .darkColor {
+    background-color: #333 !important;
+  }
+  .btnColor {
+    background-color: white !important;
+    color: black !important;
+  }
+  .btnColor:hover {
+    background-color: var(--main-color) !important;
+    color: white !important;
+  }
+  .whiteColor {
+    color: white !important;
+  }
 
   .containar {
     padding-left: 15px;
@@ -62,7 +76,31 @@ ul {
     }
     
   }
+
 /* //////////////////////////////////////////// start nav  */
+.nav-link {
+ color: var(--main-color);
+ font-weight: bold;
+}
+
+.logo {
+  font-family: var(--heading-font);
+  font-weight: bold;
+  font-size: 25px;
+  color: inherit;
+}
+ .logo span {
+  color: var(--main-color);
+ }
+form button {
+  color: var(--main-color) !important;
+  border: 2px solid var(--main-color) !important;
+  font-weight: bold !important;
+}
+form button:hover {
+  background-color: var(--main-color) !important;
+  color: white !important;
+}
 .mega-menu {
   position: absolute;
   z-index: 99;
@@ -159,7 +197,205 @@ color: var(--main-color);
        left: 10%;
       }
   }
+
   /* //////////////////////////////////////////// end nav  */
+
+
+/* /////////////////// start setting box  */
+
+.setting-boxes {
+  width: 200px;
+  position: fixed;
+  height: 100vh;
+  background-color: rgb(228, 228, 228);
+  top: 0;
+  left: 0;
+  z-index: 99999999999999999999;
+  transition: 0.5s;
+  left: -200px;
+  border-right: 1px solid #c5c5c5;
+}
+.open {
+  left: 0;
+}
+.spin {
+  position: absolute;
+  right: -31px;
+  background-color: var(--main-color);
+  color: white;
+  padding: 8px;
+  top: 20%;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  cursor: pointer;
+}
+.hide i{
+  position: absolute;
+  right: 10px;
+  margin-bottom: 10px;
+  top: 5px;
+  font-size: 22px;
+  cursor: pointer;
+}
+.setting-box  {
+  width: 180px;
+  margin: 10px;
+  margin: 15px 10px;
+  height: 80px;
+  border: 2px solid #c5c5c5;
+  text-align: center;
+  position: relative;
+  border-radius: 8px;
+  top: 15px;
+}
+.C-box {
+  width: 180px;
+  margin: 10px;
+  margin: 15px 10px;
+  height: 270px;
+  border: 2px solid #c5c5c5;
+  text-align: center;
+  position: relative;
+  border-radius: 8px;
+  top: 15px;
+} 
+.colorGenerator {
+  width: 100px;
+  height: 40px;
+  background-color: #4671EA;
+  margin: auto;
+  position: relative;
+  top: 10px;
+}
+.all-sliders {
+  position: relative;
+  top: 15px;
+}
+.slider  {
+  padding: 2px 0;
+}
+.rgb-value {
+  position: relative;
+  top: 15px;
+  background-color: #4671EA;
+  width: fit-content;
+  text-align: center;
+  display: flex;
+  margin: auto;
+  padding: 5px;
+  color: white;
+  border-radius: 8px;
+}
+.changeColor {
+  position: relative;
+  top: 25px;
+  border: none;
+  background-color: inherit;
+  border: 2px solid #c7c7c7;
+  padding: 5px;
+  border-radius: 8px;
+  transition: 0.3s;
+  color: inherit;
+}
+.changeColor:hover {
+background-color: var(--main-color);
+color: white;
+border: 2px solid var(--main-color);
+}
+.setting-boxes .setting-box h4 {
+font-weight: bold;
+font-family: var(--heading-font);
+font-size: 18px;
+position: relative;
+top: 8px;
+}
+.tog {
+  justify-content: center;
+  gap: 10px;
+  margin-top: 15px;
+}
+.yn {
+  background-color: var(--main-color) !important;
+  z-index: 9999999999;
+}
+.DL{
+  justify-content: center;
+  gap: 10px;
+  margin-top: 15px;
+}
+.dl {
+  background-color: var(--main-color) !important;
+  z-index: 9999999999;
+}
+.setting-boxes .setting-box span {
+padding: 1px;
+background-color:  #cac7c7;
+color: white;
+width: 50px;
+display: block;
+text-align: center;
+cursor: pointer;
+}
+/* /////////////////// end setting box  */
+/* //////////////////// start bullets */
+.bulletLinks {
+  position: fixed;
+  top: 30%;
+  right: 20px;
+  z-index: 9999999999999999999999999999999999999999;
+}
+
+.bulletLinks .bullet a p {
+  border: 3px solid var(--main-color);
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 9999999999999999999999999999999999999999;
+  margin-bottom: 25px;
+  position: relative;
+}
+.bulletLinks .bullet span{
+  width: 100px;
+  height: 33px;
+  background-color: #242424;
+  color: white;
+  left: -120px;
+  position: relative;
+  top: -9px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--main-color);
+  padding: 4px;
+  font-weight: bold;
+  font-family: var(--heading-font);
+  display: none;
+}
+.bulletLinks .bullet span::after{
+  content: '' ;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  border-right: 10px solid transparent;
+  border-top: 10px solid transparent;
+  border-left: 10px solid var(--main-color);
+  border-bottom: 10px solid transparent;
+  right: -20px;
+  top: 6px;
+  display: none;
+
+}
+
+.bulletLinks .bullet a:hover span  {
+  display: block;
+}
+.bulletLinks .bullet a:hover span::after  {
+  display: block;
+}
+/* //////////////////// end bullets */
+
 
   /* //////////////////////////////////////////// start landing  */
   .landing {
@@ -192,8 +428,8 @@ color: var(--main-color);
     .landing p::after {
         content: '';
         position: absolute;
-        width: 535px;
-        height: 235px;
+        width: 505px;
+        height: 180px;
         background-color: var(--main-color);
         right: -804px;
         bottom: -260px;
@@ -202,8 +438,8 @@ color: var(--main-color);
       .landing::before {
         content: '';
         position: absolute;
-        width: 346px;
-        height: 235px;
+        width: 316px;
+        height: 190px;
         background-color: var(--main-color);
         right: -150px;
         bottom: -84px;
@@ -428,7 +664,7 @@ z-index: -1;
   .cars .swiper-slide {
   width: 280px;
   height: 400px;
-  background-color: #cecece;
+
   border-radius: 8px;
 }
 .cars .car img {
@@ -586,7 +822,7 @@ top: -100px;
   .pricing-box {
     width: 270px;
     height: 600px;
-    border: 1px solid  rgba(0, 0, 0, 0.142);
+    border: 1px solid  rgba(180, 180, 180, 0.406);
     border-radius: 8px;
   }
   @media (max-width : 768px) {
@@ -596,7 +832,7 @@ top: -100px;
     }
   }
   .save-box {
-    background-color: #EDF3E0;
+    background-color: #edf3e077;
     overflow: hidden;
   }
   .save-box h2 {
@@ -608,7 +844,7 @@ top: -100px;
     font-size: 31px;
   }
   .save-box i {
-    color: #d7e5b9 ;
+    color: var(--main-color);
     font-size: 250px;
     position: relative;
     top: 80px;
@@ -669,7 +905,7 @@ top: -100px;
     font-family: var(--heading-font);
   }
   .service-content .service-title span{
-    color: #94CA21;
+    color: var(--main-color) !important;
   }
   .service-content .service-cont{
     color: gray;
@@ -707,9 +943,10 @@ top: -100px;
   .service-box  {
     width: 270px;
     height: 170px;
-    background-color: white;
+    background-color: inherit;
     border-radius: 8px;
     text-align: center;
+    border: 2px solid #e3e1e1;
   }
   .service-box i{
     color: var(--main-color);
@@ -740,15 +977,18 @@ color: gray;
     border: none;
     border-bottom: 1px solid #eee;
     background-color: inherit !important;
-    color: gray;
+    color: gray !important;
   }
   .accordion-item  button {
     height: 75px;
     background-color: inherit !important;
+    color: gray !important;
   }
-  .accordion-item  button:focus {
-    border: none !important;
+ .accordion-button::after {
+ 
+   display: none;
   }
+
   /* //////////////////////////// start answer  */
 
 
@@ -806,11 +1046,11 @@ margin-bottom: 15px;
   width: 76px;
   font-size: 27px;
 }
-.date-content p {
+.date-content span {
 color: gray;
 }
 .date-content .date-cont {
-color: black;
+
 font-size: 25px;
 font-weight: bold;
 }

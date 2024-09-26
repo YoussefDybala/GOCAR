@@ -13,16 +13,16 @@
 </style>
 </head>
 <body>
-  <nav class="navbar  navbar-expand-lg bg-body-tertiary containar">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#"><img src="image/logo.png" alt=""></a>
+  <nav class="navbar  navbar-expand-lg bg-body-inherit  ">
+    <div class="container-fluid containar">
+      <a class="navbar-brand logo" href="#">GO<span>CAR</span></span></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <a class="nav-link" aria-current="page" href="#">Home</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#Cars">Cars</a>
@@ -82,6 +82,54 @@
     <span class="close-nav">Close</span>
   </div>
 
+<div class="bulletLinks">
+  <div class="bullet"><a href="#Cars"><p><span>Cars</span></p>  </div> 
+  <div class="bullet"><a href="#Pricing"><p><span>Pricing</span></p></a></div>
+  <div class="bullet"><a href="#Service"><p><span>Services</span></p></a> </div>
+  <div class="bullet"><a href="#Blog"><p><span>Blog</span></p></a></div>
+  <div class="bullet"><a href="#Contact"><p><span>Contact</span></p></a></div>
+</div>
+
+
+<div class="setting-boxes">
+  <div class="spin">  <i class="fa-solid fa-gear gear fa-spin"></i></div>
+  <p class="hide"><i class="fa-solid fa-circle-xmark"></i>  </p>
+  <div class="setting-box">
+    <h4>Show Bullets</h4>
+    <div class="tog d-flex">
+      <span class="yes yn ">Yes</span>
+      <span class="no">No</span>
+    </div>
+  </div>
+  <div class="setting-box">
+    <h4>Dark Mode</h4>
+    <div class="DL d-flex">
+      <span class="dark ">Yes</span>
+      <span class="light dl">No</span>
+    </div>
+  </div>
+  <div class="setting-box C-box">
+    <h4>Color Generate</h4>
+    <div class="colorGenerator">
+
+    </div>
+    <div class="all-sliders">
+      <div class="slider">R
+        <input type="range" name="" id="red" min="0" max="255" value="0" oninput="colorChange()">
+      </div>
+      <div class="slider">G
+        <input type="range" name="" id="green" min="0" max="255" value="0" oninput="colorChange()">
+      </div>
+      <div class="slider">B
+        <input type="range" name="" id="blue" min="0" max="255" value="0" oninput="colorChange()">
+      </div>
+    </div>
+   
+    <p class="rgb-value">rgb(0,0,0)</p>
+    <button class="changeColor">Change</button>
+  </div>
+</div>
+
 
   <section class="landing">
     <h1>FIND YOUR <span>RENTAL CAR</span></h1>
@@ -105,7 +153,7 @@
       <input type="datetime-local">
     </div>
 
-    <button>FIND YOUR CAR</button>
+    <button class="sendCar">FIND YOUR CAR</button>
 
   </section>
   <section class="process">
@@ -154,7 +202,7 @@
               </ul>
               <div class="car-rent d-flex">
                 <p>$369 <span>/Day</span></p>
-               <div>Rent Now</div>
+               <div class="rent">Rent Now</div>
               </div>
             </div>
           </div>
@@ -170,7 +218,7 @@
               </ul>
               <div class="car-rent d-flex">
                 <p>$369 <span>/Day</span></p>
-               <div>Rent Now</div>
+               <div class="rent">Rent Now</div>
               </div>
             </div>
           </div>
@@ -186,7 +234,7 @@
               </ul>
               <div class="car-rent d-flex">
                 <p>$369 <span>/Day</span></p>
-               <div>Rent Now</div>
+               <div class="rent">Rent Now</div>
               </div>
             </div>
           </div>
@@ -281,7 +329,7 @@
         <button>CHOOSE PLAN</button>
       </div>
       <div class="pricing-box">
-        <div style="color: #94CA21;">Recommended</div>
+        <div style="color: var(--main-color)">Recommended</div>
         <p class="price-Two price-pricing">$530.60</p>
         <ul>
           <li>✓ Quisque rhoncus</li>
@@ -290,7 +338,7 @@
           <li>✓ Velit mir</li>
           <li>✓ Elit mir ivamus</li>
         </ul>
-        <button style=" background-color: #94CA21;">CHOOSE PLAN</button>
+        <button style=" background-color: var(--main-color)">CHOOSE PLAN</button>
       </div>
       <div class="pricing-box">
         <div>Pro</div>
@@ -388,21 +436,21 @@
         <div class="blog-cont d-flex">
           <div class="datee"> Jan 2 2023</div>
           <div class="date-content">
-            <p>Tips</p>
+            <span>Tips</span>
             <p class="date-cont">Safest car rental services in 2023</p>
           </div>
         </div>
         <div class="blog-cont d-flex">
           <div class="datee"> Jan 5 2023</div>
           <div class="date-content">
-            <p>Rental</p>
+            <span>Rental</span>
             <p class="date-cont">Best car collection in the world</p>
           </div>
         </div>
         <div class="blog-cont d-flex">
           <div class="datee"> Jan 8 2023</div>
           <div class="date-content">
-            <p>Tips</p>
+            <span>Tips</span>
             <p class="date-cont">Which car is the best for travel</p>
           </div>
         </div>
@@ -424,7 +472,7 @@
   </section>
   <section class="footer d-flex containar">
     <div class="footer-title">
-      <img src="image/logo.png" alt="">
+      <div class="logo">GO<span>CAR</span></div>
       <p>Vel non nibh vestibulum massa ullam corper bib endum ultrices venenatis, id id sed mass.</p>
       <ul class="d-flex">
         <li><i class="fa-brands fa-facebook " ></i></li>
