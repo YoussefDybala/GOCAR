@@ -81,6 +81,7 @@ if (ele === dark) {
     navBar.classList.add("darkColor")
     sendCar.classList.add("darkColor")
     sendCarBtn.classList.add("btnColor")
+    megaMenu.classList.add("darkColor")
   })
 } else {
 light.addEventListener("click" , function () {
@@ -96,6 +97,7 @@ light.addEventListener("click" , function () {
   navBar.classList.remove("darkColor")
   sendCar.classList.remove("darkColor")
   sendCarBtn.classList.remove("btnColor")
+  megaMenu.classList.remove("darkColor")
 
 })
 

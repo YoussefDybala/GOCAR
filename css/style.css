@@ -47,7 +47,10 @@ ul {
   .whiteColor {
     color: white !important;
   }
-
+ .toggl {
+    color: var(--main-color) !important;
+    font-size: 25px;
+  }
   .containar {
     padding-left: 15px;
     padding-right: 15px;
@@ -76,7 +79,10 @@ ul {
     }
     
   }
-
+  .toggl {
+    color: var(--main-color) !important;
+    font-size: 25px;
+  }
 /* //////////////////////////////////////////// start nav  */
 .nav-link {
  color: var(--main-color);
@@ -113,7 +119,8 @@ form button:hover {
   transform: translateY(-430px);
   transition: 0.5s;
   background-color: rgb(255, 255, 255);
-  border-bottom: 5px solid var(--main-color);
+  border-bottom: 5px solid var(--main-color) !important;
+  border: 0.5px solid var(--main-color);
 }
 .mega-menu .menu {
 width: 500px;
@@ -831,6 +838,7 @@ top: -100px;
       height: 600px;
     }
   }
+
   .save-box {
     background-color: #edf3e077;
     overflow: hidden;

@@ -18,14 +18,14 @@
 <body>
   <nav class="navbar  navbar-expand-lg bg-body-tertiary containar">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#"><img src="image/logo.png" alt=""></a>
+      <a class="navbar-brand logo" href="#">GO<span>CAR</span></span></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+        <i class="fa-solid fa-bars toggl"></i>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            <a class="nav-link " aria-current="page" href="index.html">Home</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#Cars">Cars</a>
@@ -93,6 +93,53 @@
     </div>
     <div class="pattern"></div>
 </section>
+
+<div class="bulletLinks">
+  <div class="bullet"><a href="#Cars"><p><span>Cars</span></p>  </div> 
+  <div class="bullet"><a href="#Contact"><p><span>Contact</span></p></a></div>
+</div>
+
+
+<div class="setting-boxes">
+  <div class="spin">  <i class="fa-solid fa-gear gear fa-spin"></i></div>
+  <p class="hide"><i class="fa-solid fa-circle-xmark"></i>  </p>
+  <div class="setting-box">
+    <h4>Show Bullets</h4>
+    <div class="tog d-flex">
+      <span class="yes yn ">Yes</span>
+      <span class="no">No</span>
+    </div>
+  </div>
+  <div class="setting-box">
+    <h4>Dark Mode</h4>
+    <div class="DL d-flex">
+      <span class="dark ">Yes</span>
+      <span class="light dl">No</span>
+    </div>
+  </div>
+  <div class="setting-box C-box">
+    <h4>Color Generate</h4>
+    <div class="colorGenerator">
+
+    </div>
+    <div class="all-sliders">
+      <div class="slider">R
+        <input type="range" name="" id="red" min="0" max="255" value="0" oninput="colorChange()">
+      </div>
+      <div class="slider">G
+        <input type="range" name="" id="green" min="0" max="255" value="0" oninput="colorChange()">
+      </div>
+      <div class="slider">B
+        <input type="range" name="" id="blue" min="0" max="255" value="0" oninput="colorChange()">
+      </div>
+    </div>
+   
+    <p class="rgb-value">rgb(0,0,0)</p>
+    <button class="changeColor">Change</button>
+  </div>
+</div>
+
+
 <section class="containar" id="Cars">
     <div class="main-title">
         <h1>CARS FOR <span>RENTAL</span></h1>
@@ -256,7 +303,7 @@
   </section>
   <section class="footer d-flex containar">
     <div class="footer-title">
-      <img src="image/logo.png" alt="">
+      <a class="navbar-brand logo" href="#">GO<span>CAR</span></span></a>
       <p>Vel non nibh vestibulum massa ullam corper bib endum ultrices venenatis, id id sed mass.</p>
       <ul class="d-flex">
         <li><i class="fa-brands fa-facebook " ></i></li>

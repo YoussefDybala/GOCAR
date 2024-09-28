@@ -82,7 +82,52 @@ ul {
   .main-title span{
     color: var(--main-color);
   }
+  .darkColor {
+    background-color: #333 !important;
+  }
+  .btnColor {
+    background-color: white !important;
+    color: black !important;
+  }
+  .btnColor:hover {
+    background-color: var(--main-color) !important;
+    color: white !important;
+  }
+  .whiteColor {
+    color: white !important;
+  }
+ .toggl {
+    color: var(--main-color) !important;
+    font-size: 25px;
+  }
+  .toggl {
+    color: var(--main-color) !important;
+    font-size: 25px;
+  }
 /* //////////////////////////////////////////// start nav  */
+.logo {
+  font-family: var(--heading-font);
+  font-weight: bold;
+  font-size: 25px;
+  color: inherit;
+}
+form button {
+  color: var(--main-color) !important;
+  border: 2px solid var(--main-color) !important;
+  font-weight: bold !important;
+}
+form button:hover {
+  background-color: var(--main-color) !important;
+  color: white !important;
+}
+.nav-link {
+  color: var(--main-color);
+  font-weight: bold;
+ }
+ 
+ .logo span {
+  color: var(--main-color);
+ }
 .mega-menu {
   position: absolute;
   z-index: 99;
@@ -95,7 +140,8 @@ ul {
   transform: translateY(-430px);
   transition: 0.5s;
   background-color: rgb(255, 255, 255);
-  border-bottom: 5px solid var(--main-color);
+  border-bottom: 5px solid var(--main-color) !important;
+  border: 0.1px solid var(--main-color);
 }
 .mega-menu .menu {
 width: 500px;
@@ -196,12 +242,24 @@ color: var(--main-color);
 .Revv::after {
     position: absolute;
     content: '';
-    width: 150px;
+    width: 190px;
     height: 250px;
     background-color: var(--main-color);
     left: -112px;
-    bottom: -175px;
+    bottom: -280px;
     transform: rotate(40deg);
+}
+@media (max-width :768px) {
+  .Revv::after {
+    position: absolute;
+    content: '';
+    width: 280px;
+    height: 250px;
+    background-color: var(--main-color);
+    left: -112px;
+    bottom: -280px;
+    transform: rotate(40deg);
+}
 }
 .Revv {
     display: flex;
@@ -222,34 +280,211 @@ color: var(--main-color);
 }
 .Rev .pattern {
   background-color: var(--main-color);
-  width: 400px;
-  height: 400px;
+  width: 320px;
+  height: 340px;
   position: relative;
-  right:  -1350px;
+  right:  -1450px;
   bottom: -100px;
   transform: rotate(40deg);
   z-index: 999999999999999;
 }
-.Rev.pattern::after {
-  content: '';
-  position: absolute;
-  background-color: #f3f2f2;
-  width: 20px;
-  height: 400px;
-  top: -50px;
-  left: -10px;
-}
-.Rev .pattern::before {
-  content: '';
-  position: absolute;
-  background-color: var(--main-color);
-  width: 20px;
-  height: 400px;
-  top: -50px;
-  left: -30px;
-}
+
 /* //////////////////// end REV */
 
+
+
+.setting-boxes {
+  width: 200px;
+  position: fixed;
+  height: 100vh;
+  background-color: rgb(228, 228, 228);
+  top: 0;
+  left: 0;
+  z-index: 99999999999999999999;
+  transition: 0.5s;
+  left: -200px;
+  border-right: 1px solid #c5c5c5;
+}
+.open {
+  left: 0;
+}
+.spin {
+  position: absolute;
+  right: -31px;
+  background-color: var(--main-color);
+  color: white;
+  padding: 8px;
+  top: 20%;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  cursor: pointer;
+}
+.hide i{
+  position: absolute;
+  right: 10px;
+  margin-bottom: 10px;
+  top: 5px;
+  font-size: 22px;
+  cursor: pointer;
+}
+.setting-box  {
+  width: 180px;
+  margin: 10px;
+  margin: 15px 10px;
+  height: 80px;
+  border: 2px solid #c5c5c5;
+  text-align: center;
+  position: relative;
+  border-radius: 8px;
+  top: 15px;
+}
+.C-box {
+  width: 180px;
+  margin: 10px;
+  margin: 15px 10px;
+  height: 270px;
+  border: 2px solid #c5c5c5;
+  text-align: center;
+  position: relative;
+  border-radius: 8px;
+  top: 15px;
+} 
+.colorGenerator {
+  width: 100px;
+  height: 40px;
+  background-color: #4671EA;
+  margin: auto;
+  position: relative;
+  top: 10px;
+}
+.all-sliders {
+  position: relative;
+  top: 15px;
+}
+.slider  {
+  padding: 2px 0;
+}
+.rgb-value {
+  position: relative;
+  top: 15px;
+  background-color: #4671EA;
+  width: fit-content;
+  text-align: center;
+  display: flex;
+  margin: auto;
+  padding: 5px;
+  color: white;
+  border-radius: 8px;
+}
+.changeColor {
+  position: relative;
+  top: 25px;
+  border: none;
+  background-color: inherit;
+  border: 2px solid #c7c7c7;
+  padding: 5px;
+  border-radius: 8px;
+  transition: 0.3s;
+  color: inherit;
+}
+.changeColor:hover {
+background-color: var(--main-color);
+color: white;
+border: 2px solid var(--main-color);
+}
+.setting-boxes .setting-box h4 {
+font-weight: bold;
+font-family: var(--heading-font);
+font-size: 18px;
+position: relative;
+top: 8px;
+}
+.tog {
+  justify-content: center;
+  gap: 10px;
+  margin-top: 15px;
+}
+.yn {
+  background-color: var(--main-color) !important;
+  z-index: 9999999999;
+}
+.DL{
+  justify-content: center;
+  gap: 10px;
+  margin-top: 15px;
+}
+.dl {
+  background-color: var(--main-color) !important;
+  z-index: 9999999999;
+}
+.setting-boxes .setting-box span {
+padding: 1px;
+background-color:  #cac7c7;
+color: white;
+width: 50px;
+display: block;
+text-align: center;
+cursor: pointer;
+}
+/* /////////////////// end setting box  */
+/* //////////////////// start bullets */
+.bulletLinks {
+  position: fixed;
+  top: 30%;
+  right: 20px;
+  z-index: 9999999999999999999999999999999999999999;
+}
+
+.bulletLinks .bullet a p {
+  border: 3px solid var(--main-color);
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 9999999999999999999999999999999999999999;
+  margin-bottom: 25px;
+  position: relative;
+}
+.bulletLinks .bullet span{
+  width: 100px;
+  height: 33px;
+  background-color: #242424;
+  color: white;
+  left: -120px;
+  position: relative;
+  top: -9px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--main-color);
+  padding: 4px;
+  font-weight: bold;
+  font-family: var(--heading-font);
+  display: none;
+}
+.bulletLinks .bullet span::after{
+  content: '' ;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  border-right: 10px solid transparent;
+  border-top: 10px solid transparent;
+  border-left: 10px solid var(--main-color);
+  border-bottom: 10px solid transparent;
+  right: -20px;
+  top: 6px;
+  display: none;
+
+}
+
+.bulletLinks .bullet a:hover span  {
+  display: block;
+}
+.bulletLinks .bullet a:hover span::after  {
+  display: block;
+}
+/* //////////////////// end bullets */
 
 /* ///////////////////////////// START REVIEWS  */
 .rev {
@@ -261,13 +496,13 @@ color: var(--main-color);
     align-items: center;
     gap: 30px;
 }
-.rev .boxes .box {
+.rev .boxes .rev-box {
     width: 350px;
     height: 350px;
-    background-color: #eee;
+    border: 2px solid #e5e3e3;
     border-radius: 8px;
 }
-.rev .boxes .box .review-content {
+.rev .boxes .rev-box .review-content {
     padding: 40px;
 }
 .review-content h1 {
